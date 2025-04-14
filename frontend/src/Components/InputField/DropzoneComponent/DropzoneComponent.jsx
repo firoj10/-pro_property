@@ -38,13 +38,13 @@ const DropzoneComponent = ({ onFileDrop, name, multiple }) => {
     <div className="mb-4 relative">
       <div {...getRootProps()} className="border-2 border-dashed border-gray-300 p-6 text-center rounded-md cursor-pointer">
         <input {...getInputProps()} />
-        <FaCloudUploadAlt className="mx-auto text-gray-500 text-4xl" />
-        <p className="text-gray-700 mt-2">Drag and drop an image here, or click to select one.</p>
+        <FaCloudUploadAlt className="mx-auto text-primary text-4xl" />
+        <p className="text-primary mt-2">Drag and drop an image here, or click to select one.</p>
       </div>
 
       {selectedFile && (
         <div className="image-preview mt-4 relative">
-          <img src={selectedFile} alt="Selected" className="w-32 h-32 object-cover rounded-md" />
+          <img src={selectedFile} alt="Selected" className="w-20 h-26 object-cover rounded-md" />
           
           {/* Cross button to remove image */}
           <button

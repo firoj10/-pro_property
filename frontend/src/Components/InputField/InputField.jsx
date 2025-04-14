@@ -201,7 +201,7 @@ const InputField = ({ label, name, type = "text", placeholder, options = [], con
         {type === "textarea" ? (
           <textarea
             {...register(name)}
-            placeholder={placeholder}
+            placeholder={label}
             disabled={disabled}
             className={`pl-10 p-2 w-full border border-gray-300 rounded-md focus:ring focus:ring-blue-300 ${disabled ? 'bg-gray-200 cursor-not-allowed' : ''}`}
           />
@@ -238,7 +238,7 @@ const InputField = ({ label, name, type = "text", placeholder, options = [], con
           <input
             type={type}
             {...register(name)}
-            placeholder={placeholder}
+            placeholder={label}
             disabled={disabled}
             className={`pl-10 p-2 w-full border border-gray-300 rounded-md focus:ring focus:ring-blue-300 ${disabled ? 'bg-gray-200 cursor-not-allowed' : ''}`}
           />

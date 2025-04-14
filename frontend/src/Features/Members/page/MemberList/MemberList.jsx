@@ -13,16 +13,16 @@ const MemberList = () => (
             <div className="flex gap-3 justify-end mb-4">
                 {/* Uncomment to use these buttons */}
                 <Button variant="secondary" size="sm" className="flex items-center gap-2">
-      <FaHome className="text-lg" />
-      Home Page
-    </Button>
+                    <FaHome className="text-lg" />
+                    Home Page
+                </Button>
 
-    <form className="inline-block">
-      <SubmitButton variant="primary" size="sm" className="flex items-center gap-2">
-        <FaSave />
-        Save Data
-      </SubmitButton>
-    </form>
+                <form className="inline-block">
+                    <SubmitButton variant="primary" size="sm" className="flex items-center gap-2">
+                        <FaSave />
+                        Save Data
+                    </SubmitButton>
+                </form>
 
 
                 <NavigationButton
